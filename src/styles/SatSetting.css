@@ -10,7 +10,7 @@
 }
 
 .setting-label {
-    color: #777;
+    color: #777777;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -49,7 +49,7 @@
 .ant-slider:hover .ant-slider-track{
     background-color: #1f6099;
 }
-/*nearby button*/
+nearby button
 .show-nearby {
     display: flex;
     justify-content: center;
