@@ -1,7 +1,5 @@
-
 import React, {Component} from 'react';
-import { Slider, Button,InputNumber  } from 'antd';
-
+import {InputNumber, Button, Slider} from 'antd';
 
 class SatSetting extends Component {
     constructor(){
@@ -46,11 +44,11 @@ class SatSetting extends Component {
     }
 
     showSatellite = () => {
-        console.log('clicked')
+        this.props.onShow(this.state);
     }
 
     render() {
-        const durationMarkers = { 0: '0', 90: '90'};
+        const durationMarkers = { 0: '0', 89: '90'};
         return (
             <div className="sat-setting">
                 <div className="loc-setting">
@@ -83,8 +81,8 @@ class SatSetting extends Component {
                         <div className="list-item">
                             <label>Elevation(meters): </label>
                             <InputNumber
-                                min={0}
-                                max={90}
+                                min={-413}
+                                max={8850}
                                 defaultValue={0}
                                 style={{margin: "0 2px"}}
                                 onChange={this.onChangeEle}
@@ -106,7 +104,6 @@ class SatSetting extends Component {
                             onChange={this.onChangeAlt} /> <span>degrees.</span>
                     </div>
                 </div>
-
 
                 <div className="duration-setting">
                     <p className="setting-label">Duration(sec)</p>
