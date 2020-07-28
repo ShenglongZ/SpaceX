@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import SatSetting from './SatSetting';
-import Test from "./Test"
 class Main extends Component {
     render() {
         return (
