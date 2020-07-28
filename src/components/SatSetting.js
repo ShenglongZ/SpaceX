@@ -53,11 +53,6 @@ class SatSetting extends Component {
         const durationMarkers = { 0: '0', 90: '90'};
         return (
             <div className="sat-setting">
-                <Slider
-                    range
-                    step={10}
-                    defaultValue={[20, 50]}
-                />
                 <div className="loc-setting">
                     <p className="setting-label">From Location</p>
                     <div className="setting-list two-item-col">
