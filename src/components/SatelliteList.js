@@ -2,10 +2,13 @@
 import React, {Component} from 'react';
 import { List, Avatar, Button, Checkbox, Spin } from 'antd';
 import satellite from "../assets/images/satellite1.png";
-
+import InfiniteScroll from 'react-infinite-scroller';
 class SatelliteList extends Component {
     render() {
         const satList = this.props.satInfo ? this.props.satInfo.above : [];
+        console.log("show this.props");
+        console.log(this.props.isLoad);
+        console.log("end of prop");
         const { isLoad } = this.props;
 
         return (
@@ -20,6 +23,14 @@ class SatelliteList extends Component {
                             <Spin tip="Loading..." size="large" />
                         </div>
                         :
+                        <div className="demo-infinite-container">
+                            <InfiniteScroll
+                                initialLoad={false}
+                                pageStart={0}
+                                // loadMore={this.handleInfiniteOnLoad}
+                                // hasMore={!this.state.loading && this.state.hasMore}
+                                useWindow={false}
+                            >
                         <List
                             className="sat-list"
                             itemLayout="horizontal"
@@ -37,7 +48,15 @@ class SatelliteList extends Component {
 
                                 </List.Item>
                             )}
-                        />
+                        >
+                            {/*{this.state.isLoad && (*/}
+                            {/*    <div className="demo-loading-container">*/}
+                            {/*        <Spin />*/}
+                            {/*    </div>*/}
+                            {/*)}*/}
+                        </List>
+                            </InfiniteScroll>
+                        </div>
                 }
             </div>
         );

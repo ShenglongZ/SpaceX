@@ -42,6 +42,8 @@ class Main extends Component {
     }
 
     render() {
+        console.log("this.state.info");
+        console.log(this.state);
         const { satInfo } = this.state;
 
         return (
@@ -51,7 +53,6 @@ class Main extends Component {
                     <SatelliteList satInfo={satInfo}
                                    isLoad={this.state.isLoadingList}
                     />
-
                 </div>
                 <div className="right-side">
                     right
