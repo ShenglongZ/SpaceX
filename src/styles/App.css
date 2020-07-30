@@ -1,5 +1,10 @@
 .App {
+  position: relative;
+  display: block;
+  min-height:100vh;
+  overflow: hidden;
   text-align: center;
+  /*padding-bottom: ;*/
 }
 
 /*.App {*/

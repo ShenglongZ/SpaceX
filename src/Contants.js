@@ -5,3 +5,4 @@ export const SAT_API_KEY = "N34THE-9F9B5R-TLCFA8-4ID6";
 export const STARLINK_CATEGORY = "52";
 
 export const NEARBY_SATELLITE = `${SAT_BASE_URL}/above`;
+export const WORLD_MAP_URL = "https://unpkg.com/world-atlas@1/world/110m.json";

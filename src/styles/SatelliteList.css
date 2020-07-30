@@ -13,18 +13,14 @@
     color: #fff;
 }
 
-.demo-infinite-container {
-    border: 1px solid #e8e8e8;
-    border-radius: 4px;
-    overflow: auto;
-    padding: 8px 24px;
-    height: 300px;
-
-
+.sat-list {
+    height: 335px;
+    overflow: scroll;
 }
-.demo-loading-container {
-    position: absolute;
-    bottom: 40px;
-    width: 100%;
-    text-align: center;
+
+.spin-box {
+    height: 370px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
