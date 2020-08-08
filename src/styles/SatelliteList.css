@@ -1,16 +1,16 @@
-.sat-list-box{
-    padding: 10px;
+.sat-list-box {
     border: 2px solid #ccc;
-    margin-top: 10px;
     height: 410px;
+    margin-top: 10px;
+    padding: 10px;
 }
 
 .sat-list-btn {
+    background-color: #2bb673;
+    color: #fff;
+    font-size: 1em;
     text-transform: none;
     padding: 10px 36px;
-    background-color: #2bb673;
-    font-size: 1em;
-    color: #fff;
 }
 
 .sat-list {
@@ -19,8 +19,8 @@
 }
 
 .spin-box {
-    height: 370px;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
+    height: 335px;
 }

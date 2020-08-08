@@ -1,4 +1,3 @@
-
 .sat-setting {
     text-align: left;
     padding: 10px;
@@ -6,11 +5,10 @@
 }
 
 .setting-list {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
-
 .setting-label {
-    color: #777777;
+    color: #777;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -19,19 +17,20 @@
     display: flex;
 }
 
-.list-item label, .altitude-setting span{
-    font-size: 1em;
-}
-
 .right-item {
     margin-left: 16px;
+}
+
+.list-item label,
+.altitude-setting span {
+    font-size: 1em;
 }
 
 .duration-setting {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .duration-slider {
@@ -43,23 +42,25 @@
 .ant-slider-handle{
     border: solid 2px #1f6099;
 }
+
 .ant-slider-track{
     background-color: #1f6099;
 }
+
 .ant-slider:hover .ant-slider-track{
     background-color: #1f6099;
 }
-nearby button
+
 .show-nearby {
     display: flex;
     justify-content: center;
-    margin-top:2px;
+    margin-top: 3px;
 }
 
 .show-nearby-btn {
+    background-color: #2bb673;
+    color: #fff;
+    font-size: 1em;
     text-transform: none;
     padding: 10px 22px;
-    background-color: #2bb673;
-    font-size: 1em;
-    color: #fff;
 }
